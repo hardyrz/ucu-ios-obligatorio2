@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A76DF9EAD3B11B36760CA19 /* Pods_SegundoObligatorio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E822AF9931722C794470B94 /* Pods_SegundoObligatorio.framework */; };
 		F10A94711CECD28C00536502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10A946F1CECD28C00536502 /* Main.storyboard */; };
 		F10A94731CECD28C00536502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10A94721CECD28C00536502 /* Assets.xcassets */; };
 		F10A94761CECD28C00536502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10A94741CECD28C00536502 /* LaunchScreen.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B36B160A675ABAEA07C45E8 /* Pods-SegundoObligatorio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegundoObligatorio.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegundoObligatorio/Pods-SegundoObligatorio.release.xcconfig"; sourceTree = "<group>"; };
+		5E822AF9931722C794470B94 /* Pods_SegundoObligatorio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegundoObligatorio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB1A3971517E3A81D8F67C4 /* Pods-SegundoObligatorio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegundoObligatorio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegundoObligatorio/Pods-SegundoObligatorio.debug.xcconfig"; sourceTree = "<group>"; };
 		F10A94681CECD28C00536502 /* SegundoObligatorio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegundoObligatorio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10A94701CECD28C00536502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F10A94721CECD28C00536502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A76DF9EAD3B11B36760CA19 /* Pods_SegundoObligatorio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8039611B34F617925841FED1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1A3971517E3A81D8F67C4 /* Pods-SegundoObligatorio.debug.xcconfig */,
+				2B36B160A675ABAEA07C45E8 /* Pods-SegundoObligatorio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3F7ADE694DCECD61DFDA05E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E822AF9931722C794470B94 /* Pods_SegundoObligatorio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F10A945F1CECD28C00536502 = {
 			isa = PBXGroup;
 			children = (
 				F10A946A1CECD28C00536502 /* SegundoObligatorio */,
 				F10A94691CECD28C00536502 /* Products */,
+				8039611B34F617925841FED1 /* Pods */,
+				C3F7ADE694DCECD61DFDA05E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F10A947A1CECD28C00536502 /* Build configuration list for PBXNativeTarget "SegundoObligatorio" */;
 			buildPhases = (
+				2EA9D0C2AA0AEE33C8A8091F /* [CP] Check Pods Manifest.lock */,
 				F10A94641CECD28C00536502 /* Sources */,
 				F10A94651CECD28C00536502 /* Frameworks */,
 				F10A94661CECD28C00536502 /* Resources */,
+				684A5C6620A7204406FEBDFB /* [CP] Embed Pods Frameworks */,
+				8196F4CFB8992AD2F3656951 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +180,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EA9D0C2AA0AEE33C8A8091F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		684A5C6620A7204406FEBDFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SegundoObligatorio/Pods-SegundoObligatorio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8196F4CFB8992AD2F3656951 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SegundoObligatorio/Pods-SegundoObligatorio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F10A94641CECD28C00536502 /* Sources */ = {
@@ -277,11 +352,12 @@
 		};
 		F10A947B1CECD28C00536502 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB1A3971517E3A81D8F67C4 /* Pods-SegundoObligatorio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SegundoObligatorio/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ucu.SegundoObligatorio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,11 +368,12 @@
 		};
 		F10A947C1CECD28C00536502 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B36B160A675ABAEA07C45E8 /* Pods-SegundoObligatorio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SegundoObligatorio/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ucu.SegundoObligatorio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
