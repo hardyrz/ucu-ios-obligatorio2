@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipH-gU-egB">
-                                <rect key="frame" x="121" y="107.5" width="133" height="174"/>
+                                <rect key="frame" x="118.5" y="107.5" width="138" height="140"/>
                                 <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="120"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -99,7 +99,7 @@
                                 <state key="normal" image="btn-settings"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jfd-hZ-xyd">
-                                <rect key="frame" x="16" y="291.5" width="359" height="100"/>
+                                <rect key="frame" x="16" y="257.5" width="359" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIH-WI-0A6">
                                         <rect key="frame" x="0.0" y="14" width="179.5" height="72"/>
@@ -143,6 +143,7 @@
                     <connections>
                         <outlet property="cityLabel" destination="HxG-yg-44e" id="k0i-Jc-UH3"/>
                         <outlet property="temperatureLabel" destination="gIH-WI-0A6" id="j42-EM-C3L"/>
+                        <outlet property="unitLabel" destination="Zra-0t-jXT" id="Evw-HK-Kwy"/>
                         <outlet property="weatherIconLabel" destination="ipH-gU-egB" id="Hn1-sv-GSm"/>
                     </connections>
                 </viewController>

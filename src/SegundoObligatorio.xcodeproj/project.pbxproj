@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DD87E861EE0EAA700586BBF /* ApiClientWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87E851EE0EAA700586BBF /* ApiClientWeather.swift */; };
+		0DD87E881EE0EBD000586BBF /* JSONWeatherMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87E871EE0EBD000586BBF /* JSONWeatherMappable.swift */; };
+		0DD87E8A1EE0F6B900586BBF /* JSONWeatherForecastMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87E891EE0F6B900586BBF /* JSONWeatherForecastMappable.swift */; };
 		1A76DF9EAD3B11B36760CA19 /* Pods_SegundoObligatorio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E822AF9931722C794470B94 /* Pods_SegundoObligatorio.framework */; };
 		F10A94711CECD28C00536502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10A946F1CECD28C00536502 /* Main.storyboard */; };
 		F10A94731CECD28C00536502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10A94721CECD28C00536502 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DD87E851EE0EAA700586BBF /* ApiClientWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientWeather.swift; sourceTree = "<group>"; };
+		0DD87E871EE0EBD000586BBF /* JSONWeatherMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWeatherMappable.swift; sourceTree = "<group>"; };
+		0DD87E891EE0F6B900586BBF /* JSONWeatherForecastMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWeatherForecastMappable.swift; sourceTree = "<group>"; };
 		2B36B160A675ABAEA07C45E8 /* Pods-SegundoObligatorio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegundoObligatorio.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegundoObligatorio/Pods-SegundoObligatorio.release.xcconfig"; sourceTree = "<group>"; };
 		5E822AF9931722C794470B94 /* Pods_SegundoObligatorio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegundoObligatorio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1A3971517E3A81D8F67C4 /* Pods-SegundoObligatorio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegundoObligatorio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegundoObligatorio/Pods-SegundoObligatorio.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				F10A94831CECD6EB00536502 /* WeatherIcon.swift */,
+				0DD87E851EE0EAA700586BBF /* ApiClientWeather.swift */,
+				0DD87E871EE0EBD000586BBF /* JSONWeatherMappable.swift */,
+				0DD87E891EE0F6B900586BBF /* JSONWeatherForecastMappable.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -235,7 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F10A94841CECD6EB00536502 /* ViewController.swift in Sources */,
+				0DD87E8A1EE0F6B900586BBF /* JSONWeatherForecastMappable.swift in Sources */,
 				F10A94851CECD6EB00536502 /* WeatherIcon.swift in Sources */,
+				0DD87E861EE0EAA700586BBF /* ApiClientWeather.swift in Sources */,
+				0DD87E881EE0EBD000586BBF /* JSONWeatherMappable.swift in Sources */,
 				F10A94811CECD6E200536502 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
