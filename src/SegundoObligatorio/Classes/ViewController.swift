@@ -13,6 +13,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var unitLabel: UILabel!
     
+    
+    // Little board
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var weatherIconDayLabel: UILabel!
+    
+    
     var unit = "imperial"
     var lat = ""
     var lon = ""
@@ -35,22 +41,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
             
         }
-        
-        ApiClientWeather.shared.getCurrentWeather(unit, self.lat, self.lon){ (weather,error) in
-            if let weather = weather{
-                self.weatherIconLabel.text = WeatherIcon(condition: weather.iconId, iconString: weather.iconString).iconText
-                self.temperatureLabel.text = String(weather.temperature)
-                self.cityLabel.text = weather.name
-                if (self.unit == "metric") {
-                    self.unitLabel.text = "ºC"
-                } else {
-                    self.unitLabel.text = "ºF"
-                }
-            }
-            if let error = error{
-                print(error)
-            }
-        }
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -58,8 +48,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.lat = String(location.coordinate.latitude)
             self.lon = String(location.coordinate.longitude)
             
-            ApiClientWeather.shared.getCurrentWeather(unit, self.lat, self.lon){ (weather,error) in
-                if let weather = weather{
+            print(self.lat)
+            print(self.lon)
+            
+            /*ApiClientWeather.shared.getCurrentWeather(unit, self.lat, self.lon){ (weather,error) in
+                if let weather = weather {
                     self.weatherIconLabel.text = WeatherIcon(condition: weather.iconId, iconString: weather.iconString).iconText
                     self.temperatureLabel.text = String(weather.temperature)
                     self.cityLabel.text = weather.name
@@ -72,10 +65,25 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 if let error = error{
                     print(error)
                 }
+            }*/
+            
+            
+            ApiClientWeather.shared.getForecastWeather(unit, self.lat, self.lon){ (weatherList, error) in
+                
+                /*for weather in weatherList as [JSONWeatherForecastMappable]! {
+                    self.weatherIconDayLabel.text = WeatherIcon(condition: weather.iconId, iconString: weather.iconString).iconText
+                    self.temperatureDayLabel.text = String(weather.temperature)
+                    if (self.unit == "metric") {
+                        self.unitDayLabel.text = "ºC"
+                    } else {
+                        self.unitDayLabel.text = "ºF"
+                    }
+                }*/
+                if let error = error{
+                    print(error)
+                }
             }
             
-            print(self.lat)
-            print(self.lon)
         }
     }
     
