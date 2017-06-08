@@ -7,10 +7,7 @@ class ApiClientWeather{
     static let shared = ApiClientWeather()
     
     
-    func getCurrentWeather(_ unit: String , _ onCompletion: @escaping (_ weather: JSONWeatherMappable?, _ error: Error?) -> Void){
-        
-        let lat = -34.8609363
-        let lon = -56.2148577
+    func getCurrentWeather(_ unit: String, _ lat: String, _ lon: String , _ onCompletion: @escaping (_ weather: JSONWeatherMappable?, _ error: Error?) -> Void){
         
         let url = "http://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=50d32b989418aa24a61f174aa91d3a24&units=\(unit)"
         

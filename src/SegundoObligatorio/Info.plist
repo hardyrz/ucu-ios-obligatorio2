@@ -36,6 +36,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>NSLocationUsageDescription</key>
+	<string>We need your location to get the climate.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to get the climate always.</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
