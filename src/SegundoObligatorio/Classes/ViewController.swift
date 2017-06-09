@@ -14,11 +14,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var unitLabel: UILabel!
     
     
-    // Little board
-    @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var weatherIconDayLabel: UILabel!
-    
-    
     var unit = "imperial"
     var lat = ""
     var lon = ""
