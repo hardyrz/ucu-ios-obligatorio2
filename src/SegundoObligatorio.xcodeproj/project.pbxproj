@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DBFE7AA1EEB577E00A24F7A /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFE7A91EEB577E00A24F7A /* CustomCollectionViewCell.swift */; };
 		0DD87E861EE0EAA700586BBF /* ApiClientWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87E851EE0EAA700586BBF /* ApiClientWeather.swift */; };
 		0DD87E881EE0EBD000586BBF /* JSONWeatherMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87E871EE0EBD000586BBF /* JSONWeatherMappable.swift */; };
 		0DD87E8A1EE0F6B900586BBF /* JSONWeatherForecastMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87E891EE0F6B900586BBF /* JSONWeatherForecastMappable.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DBFE7A91EEB577E00A24F7A /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DD87E851EE0EAA700586BBF /* ApiClientWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientWeather.swift; sourceTree = "<group>"; };
 		0DD87E871EE0EBD000586BBF /* JSONWeatherMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWeatherMappable.swift; sourceTree = "<group>"; };
 		0DD87E891EE0F6B900586BBF /* JSONWeatherForecastMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWeatherForecastMappable.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				F10A947D1CECD29D00536502 /* Utils */,
 				F10A947E1CECD3D300536502 /* Fonts */,
 				F10A94821CECD6EB00536502 /* ViewController.swift */,
+				0DBFE7A91EEB577E00A24F7A /* CustomCollectionViewCell.swift */,
 				F10A94801CECD6E200536502 /* AppDelegate.swift */,
 				F10A946F1CECD28C00536502 /* Main.storyboard */,
 				F10A94721CECD28C00536502 /* Assets.xcassets */,
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F10A94841CECD6EB00536502 /* ViewController.swift in Sources */,
+				0DBFE7AA1EEB577E00A24F7A /* CustomCollectionViewCell.swift in Sources */,
 				0DD87E8A1EE0F6B900586BBF /* JSONWeatherForecastMappable.swift in Sources */,
 				F10A94851CECD6EB00536502 /* WeatherIcon.swift in Sources */,
 				0DD87E861EE0EAA700586BBF /* ApiClientWeather.swift in Sources */,
