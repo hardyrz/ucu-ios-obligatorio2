@@ -4,27 +4,27 @@ import ObjectMapper
 class JSONWeatherForecastMappable: Mappable {
     var iconId1:Int = 0
     var iconString1:String = ""
-    var temperature1:Double = 0.0
+    var temperature1:Int = 0
     
     var iconId2:Int = 0
     var iconString2:String = ""
-    var temperature2:Double = 0.0
+    var temperature2:Int = 0
     
     var iconId3:Int = 0
     var iconString3:String = ""
-    var temperature3:Double = 0.0
+    var temperature3:Int = 0
     
     var iconId4:Int = 0
     var iconString4:String = ""
-    var temperature4:Double = 0.0
+    var temperature4:Int = 0
     
     var iconId5:Int = 0
     var iconString5:String = ""
-    var temperature5:Double = 0.0
+    var temperature5:Int = 0
     
     var iconId6:Int = 0
     var iconString6:String = ""
-    var temperature6:Double = 0.0
+    var temperature6:Int = 0
     
     required init? (map: Map){
     }

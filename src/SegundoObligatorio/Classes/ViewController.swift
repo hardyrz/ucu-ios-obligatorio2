@@ -15,12 +15,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     // Main board
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherIconLabel: UILabel!
-    @IBOutlet weak var temperatureLabel: UILabel!
-    @IBOutlet weak var unitLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var temperatureLabel: UILabel!
     
     
-    var unit = "imperial"
+    var unit = "metric"
     var lat = ""
     var lon = ""
     
@@ -59,9 +58,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
                         self.temperatureLabel.text = String(weather.temperature)
                         self.cityLabel.text = weather.name
                         if (self.unit == "metric") {
-                            self.unitLabel.text = "ºC"
+                            self.temperatureLabel.text = self.temperatureLabel.text! + "ºC"
                         } else {
-                            self.unitLabel.text = "ºF"
+                            self.temperatureLabel.text = self.temperatureLabel.text! + "ºF"
                         }
                     }
                     if let error = error{
