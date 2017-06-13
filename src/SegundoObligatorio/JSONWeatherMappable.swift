@@ -9,6 +9,9 @@ class JSONWeatherMappable: Mappable {
     required init? (map: Map){
     }
     
+    init? () {
+        
+    }
     func mapping(map: Map) {
         name        <- map["name"]
         iconId      <- map["weather.0.id"]
