@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SegundoObligatorio/Classes/ViewController.swift"
+            timestampString = "519098702.326289"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SegundoObligatorio.ViewController.locationManager (__ObjC.CLLocationManager, didUpdateLocations : Swift.Array&lt;__ObjC.CLLocation&gt;) -&gt; ()"
+                  moduleName = "SegundoObligatorio"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Archivos_SP26/Obligatorio%20iOS/ucu-ios-obligatorio2/src/SegundoObligatorio/Classes/ViewController.swift"
+                  timestampString = "519098269.881604"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "2325">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SegundoObligatorio.ViewController.locationManager (__ObjC.CLLocationManager, didUpdateLocations : Swift.Array&lt;__ObjC.CLLocation&gt;) -&gt; ()"
+                  moduleName = "SegundoObligatorio"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Archivos_SP26/Obligatorio%20iOS/ucu-ios-obligatorio2/src/SegundoObligatorio/Classes/ViewController.swift"
+                  timestampString = "519098269.884905"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "3280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

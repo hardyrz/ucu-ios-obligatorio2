@@ -17,7 +17,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SegundoObligatorio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SegundoObligatorio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -120,7 +120,6 @@
                                 <rect key="frame" x="333" y="40" width="32" height="33"/>
                                 <state key="normal" image="btn-settings"/>
                                 <connections>
-                                    <action selector="notRefresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKC-Dg-Kf3"/>
                                     <segue destination="8wK-ya-1RW" kind="show" id="Kaz-m6-r63"/>
                                 </connections>
                             </button>
@@ -196,10 +195,10 @@
                                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Cancelar"/>
+                                                <connections>
+                                                    <action selector="cancel:" destination="8wK-ya-1RW" eventType="touchUpInside" id="DzI-iX-R2M"/>
+                                                </connections>
                                             </button>
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="JOt-mZ-sDC"/>
-                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="hAl-Sw-HRp">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="010-dC-PER">
@@ -233,6 +232,9 @@
                                                         <segment title="C°"/>
                                                         <segment title="F°"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="unitChanged:" destination="8wK-ya-1RW" eventType="valueChanged" id="cJO-Ca-zDg"/>
+                                                    </connections>
                                                 </segmentedControl>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unidades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBY-qr-Eqy">
                                                     <rect key="frame" x="63" y="3" width="106" height="32"/>

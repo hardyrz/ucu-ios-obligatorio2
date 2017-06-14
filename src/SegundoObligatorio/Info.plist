@@ -47,5 +47,7 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need your location to get the climate always.</string>
 </dict>
 </plist>
