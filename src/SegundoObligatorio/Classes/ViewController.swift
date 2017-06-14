@@ -45,7 +45,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     @IBAction func cancel(_ sender: Any) {
         if let unit = UserDefaults.standard.object(forKey: "unit") as?  String {
             if (unit == "metric") {
-                UserDefaults.standard.setValue("metric", forKey: "imperial")
+                UserDefaults.standard.setValue("imperial", forKey: "unit")
             } else {
                 UserDefaults.standard.setValue("metric", forKey: "unit")
             }
