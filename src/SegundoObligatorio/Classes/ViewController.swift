@@ -11,6 +11,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     var refreshForecast = true
     var refreshWeather = true
     
+    var dayList = ["Lun", "Mar", "Mie", "Jue", "Vie", "Sab", "Dom"]
     
     // Main board
     @IBOutlet weak var cityLabel: UILabel!
@@ -148,8 +149,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dayCell", for: indexPath) as! CustomCollectionViewCell
         
         if let weatherForecastList = self.weatherForecastList {
-            let weather = weatherForecastList[indexPath.row] // usar este weather!!!
-            cell.dayWeekLabel.text = "LUNES!"
+            let weather = weatherForecastList[indexPath.row]
+            let day = (indexPath.row + 2)%7
+            cell.dayWeekLabel.text = self.dayList[day]
             cell.dayWeatherIconDayLabel.text = WeatherIcon(condition: weather.iconId, iconString: weather.iconString).iconText
             cell.dayTemperatureLabel.text = String(weather.temperature)
             if (self.unit == "metric") {
@@ -160,6 +162,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
         }
         return cell
     }
+    
+    
 }
 
 
