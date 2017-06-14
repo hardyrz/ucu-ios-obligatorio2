@@ -7,29 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DBFE7AA1EEB577E00A24F7A /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFE7A91EEB577E00A24F7A /* CustomCollectionViewCell.swift */; };
 		0DD87E861EE0EAA700586BBF /* ApiClientWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87E851EE0EAA700586BBF /* ApiClientWeather.swift */; };
 		0DD87E881EE0EBD000586BBF /* JSONWeatherMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87E871EE0EBD000586BBF /* JSONWeatherMappable.swift */; };
 		0DD87E8A1EE0F6B900586BBF /* JSONWeatherForecastMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD87E891EE0F6B900586BBF /* JSONWeatherForecastMappable.swift */; };
+		0DF296081EF0BD9B006C1019 /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF296061EF0BD9B006C1019 /* MapViewCell.swift */; };
+		0DF296091EF0BD9B006C1019 /* UnitsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF296071EF0BD9B006C1019 /* UnitsCell.swift */; };
 		1A76DF9EAD3B11B36760CA19 /* Pods_SegundoObligatorio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E822AF9931722C794470B94 /* Pods_SegundoObligatorio.framework */; };
-		EAB40FA61EF056070082839B /* UnitsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB40FA51EF056070082839B /* UnitsCell.swift */; };
-		EAB40FA81EF056340082839B /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB40FA71EF056340082839B /* MapViewCell.swift */; };
 		F10A94711CECD28C00536502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10A946F1CECD28C00536502 /* Main.storyboard */; };
 		F10A94731CECD28C00536502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10A94721CECD28C00536502 /* Assets.xcassets */; };
 		F10A94761CECD28C00536502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10A94741CECD28C00536502 /* LaunchScreen.storyboard */; };
 		F10A94811CECD6E200536502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A94801CECD6E200536502 /* AppDelegate.swift */; };
 		F10A94841CECD6EB00536502 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A94821CECD6EB00536502 /* ViewController.swift */; };
 		F10A94851CECD6EB00536502 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A94831CECD6EB00536502 /* WeatherIcon.swift */; };
+		F141698C1CECD7DD007D6D27 /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F141698B1CECD7DD007D6D27 /* weathericons-regular-webfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DBFE7A91EEB577E00A24F7A /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DD87E851EE0EAA700586BBF /* ApiClientWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientWeather.swift; sourceTree = "<group>"; };
 		0DD87E871EE0EBD000586BBF /* JSONWeatherMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWeatherMappable.swift; sourceTree = "<group>"; };
 		0DD87E891EE0F6B900586BBF /* JSONWeatherForecastMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWeatherForecastMappable.swift; sourceTree = "<group>"; };
+		0DF296061EF0BD9B006C1019 /* MapViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCell.swift; sourceTree = "<group>"; };
+		0DF296071EF0BD9B006C1019 /* UnitsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitsCell.swift; sourceTree = "<group>"; };
 		2B36B160A675ABAEA07C45E8 /* Pods-SegundoObligatorio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegundoObligatorio.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegundoObligatorio/Pods-SegundoObligatorio.release.xcconfig"; sourceTree = "<group>"; };
 		5E822AF9931722C794470B94 /* Pods_SegundoObligatorio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegundoObligatorio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1A3971517E3A81D8F67C4 /* Pods-SegundoObligatorio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegundoObligatorio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegundoObligatorio/Pods-SegundoObligatorio.debug.xcconfig"; sourceTree = "<group>"; };
-		EAB40FA51EF056070082839B /* UnitsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitsCell.swift; sourceTree = "<group>"; };
-		EAB40FA71EF056340082839B /* MapViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCell.swift; sourceTree = "<group>"; };
 		F10A94681CECD28C00536502 /* SegundoObligatorio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegundoObligatorio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10A94701CECD28C00536502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F10A94721CECD28C00536502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		F10A94801CECD6E200536502 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Classes/AppDelegate.swift; sourceTree = "<group>"; };
 		F10A94821CECD6EB00536502 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Classes/ViewController.swift; sourceTree = "<group>"; };
 		F10A94831CECD6EB00536502 /* WeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherIcon.swift; path = Classes/WeatherIcon.swift; sourceTree = "<group>"; };
+		F141698B1CECD7DD007D6D27 /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "weathericons-regular-webfont.ttf"; path = "Fonts/weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DF2960A1EF0BDA8006C1019 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0DF296061EF0BD9B006C1019 /* MapViewCell.swift */,
+				0DF296071EF0BD9B006C1019 /* UnitsCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		8039611B34F617925841FED1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +103,12 @@
 		F10A946A1CECD28C00536502 /* SegundoObligatorio */ = {
 			isa = PBXGroup;
 			children = (
+				0DF2960A1EF0BDA8006C1019 /* Cells */,
 				F10A947D1CECD29D00536502 /* Utils */,
 				F10A947E1CECD3D300536502 /* Fonts */,
 				F10A94821CECD6EB00536502 /* ViewController.swift */,
-				EAB40FA51EF056070082839B /* UnitsCell.swift */,
+				0DBFE7A91EEB577E00A24F7A /* CustomCollectionViewCell.swift */,
 				F10A94801CECD6E200536502 /* AppDelegate.swift */,
-				EAB40FA71EF056340082839B /* MapViewCell.swift */,
 				F10A946F1CECD28C00536502 /* Main.storyboard */,
 				F10A94721CECD28C00536502 /* Assets.xcassets */,
 				F10A94741CECD28C00536502 /* LaunchScreen.storyboard */,
@@ -118,6 +131,7 @@
 		F10A947E1CECD3D300536502 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F141698B1CECD7DD007D6D27 /* weathericons-regular-webfont.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -186,6 +200,7 @@
 			files = (
 				F10A94761CECD28C00536502 /* LaunchScreen.storyboard in Resources */,
 				F10A94731CECD28C00536502 /* Assets.xcassets in Resources */,
+				F141698C1CECD7DD007D6D27 /* weathericons-regular-webfont.ttf in Resources */,
 				F10A94711CECD28C00536502 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,12 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF296091EF0BD9B006C1019 /* UnitsCell.swift in Sources */,
 				F10A94841CECD6EB00536502 /* ViewController.swift in Sources */,
+				0DBFE7AA1EEB577E00A24F7A /* CustomCollectionViewCell.swift in Sources */,
 				0DD87E8A1EE0F6B900586BBF /* JSONWeatherForecastMappable.swift in Sources */,
 				F10A94851CECD6EB00536502 /* WeatherIcon.swift in Sources */,
-				EAB40FA61EF056070082839B /* UnitsCell.swift in Sources */,
 				0DD87E861EE0EAA700586BBF /* ApiClientWeather.swift in Sources */,
-				EAB40FA81EF056340082839B /* MapViewCell.swift in Sources */,
+				0DF296081EF0BD9B006C1019 /* MapViewCell.swift in Sources */,
 				0DD87E881EE0EBD000586BBF /* JSONWeatherMappable.swift in Sources */,
 				F10A94811CECD6E200536502 /* AppDelegate.swift in Sources */,
 			);

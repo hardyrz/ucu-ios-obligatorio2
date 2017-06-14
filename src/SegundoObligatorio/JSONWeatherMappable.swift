@@ -5,10 +5,13 @@ class JSONWeatherMappable: Mappable {
     var name:String=""
     var iconId:Int=0
     var iconString:String=""
-    var temperature:Double=0.0
+    var temperature:Int=0
     required init? (map: Map){
     }
     
+    init? () {
+        
+    }
     func mapping(map: Map) {
         name        <- map["name"]
         iconId      <- map["weather.0.id"]
