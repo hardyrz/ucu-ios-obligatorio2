@@ -27,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-background" translatesAutoresizingMaskIntoConstraints="NO" id="9xO-Fd-dM5">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxG-yg-44e">
                                 <rect key="frame" x="16" y="50" width="359" height="0.0"/>
@@ -67,13 +67,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhQ-vm-NLk">
-                                                    <rect key="frame" x="0.0" y="61" width="90" height="0.0"/>
+                                                    <rect key="frame" x="0.0" y="60" width="90" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="45"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="kWt-rg-nh7">
-                                                    <rect key="frame" x="0.0" y="61" width="90" height="60"/>
+                                                    <rect key="frame" x="0.0" y="60" width="90" height="60"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz4-qQ-f4T">
                                                             <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
@@ -140,6 +140,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="9xO-Fd-dM5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0DQ-9D-vL8"/>
                             <constraint firstItem="ipH-gU-egB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B7O-eA-T6e"/>
                             <constraint firstAttribute="trailing" secondItem="HxG-yg-44e" secondAttribute="trailing" id="H8J-cE-IXd"/>
                             <constraint firstItem="HxG-yg-44e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="HiA-Wz-AkP"/>
@@ -155,7 +156,6 @@
                             <constraint firstItem="jfd-hZ-xyd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="owz-bC-6zO"/>
                             <constraint firstItem="py6-jX-06y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="rd8-jQ-07Z"/>
                             <constraint firstItem="HxG-yg-44e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rfk-JW-tUl"/>
-                            <constraint firstItem="9xO-Fd-dM5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="x7L-bA-wW1"/>
                             <constraint firstItem="9xO-Fd-dM5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yaL-ss-RlU"/>
                         </constraints>
                     </view>
