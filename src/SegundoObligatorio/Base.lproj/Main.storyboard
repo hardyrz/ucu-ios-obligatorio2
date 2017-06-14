@@ -205,6 +205,9 @@
                                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Guardar"/>
+                                                <connections>
+                                                    <action selector="save:" destination="8wK-ya-1RW" eventType="touchUpInside" id="LEA-EE-Z0u"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>

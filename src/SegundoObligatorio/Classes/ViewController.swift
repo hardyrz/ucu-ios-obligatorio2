@@ -43,6 +43,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
     }
     
     @IBAction func cancel(_ sender: Any) {
+        if let unit = UserDefaults.standard.object(forKey: "unit") as?  String {
+            if (unit == "metric") {
+                UserDefaults.standard.setValue("metric", forKey: "imperial")
+            } else {
+                UserDefaults.standard.setValue("metric", forKey: "unit")
+            }
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func save(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -62,9 +73,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.requestWhenInUseAuthorization()
             locationManager.startUpdatingLocation()
-            
-            
-            
         }
     }
     
