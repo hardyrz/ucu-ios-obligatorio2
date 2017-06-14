@@ -150,8 +150,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
         
         if let weatherForecastList = self.weatherForecastList {
             let weather = weatherForecastList[indexPath.row]
-            let day = (indexPath.row + 2)%7
-            cell.dayWeekLabel.text = self.dayList[day]
+            
+            let today = Date()
+            let day = Calendar.current.component(.weekday, from: today)
+            let index = (day + indexPath.row) % 7
+            
+            cell.dayWeekLabel.text = self.dayList[index]
             cell.dayWeatherIconDayLabel.text = WeatherIcon(condition: weather.iconId, iconString: weather.iconString).iconText
             cell.dayTemperatureLabel.text = String(weather.temperature)
             if (self.unit == "metric") {
@@ -162,6 +166,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UICollectionV
         }
         return cell
     }
+    
+    
+    func getDay() -> Date {
+        let date = Date()
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: date)
+        
+        let year =  components.year
+        let month = components.month
+        let day = components.day
+        
+        print(year)
+        print(month)
+        print(day)
+        return date
+    }
+    
     
     
 }
